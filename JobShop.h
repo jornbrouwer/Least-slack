@@ -9,6 +9,7 @@
 #define JOBSHOP_H_
 #include "config.h"
 
+#include "Job.h"
 #include <vector>
 
 class JobShop

@@ -14,7 +14,7 @@
 
 #include "JobShop.h"
 
-class Job: public JobShop
+class Job
 {
 public:
 	Job();
