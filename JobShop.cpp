@@ -12,14 +12,18 @@ JobShop::JobShop()
 {
 	nJobs = 0;
 	nMachines = 0;
-	std::cout << "...Constructed..." << std::endl;
+#ifdef CustomMessage_2
+	std::cout << "...Constructed:..." << "instance of JobShop" << std::endl;
+#endif
 }
 
 JobShop::JobShop(const int& aJob, const int& aMachine) :
 		nJobs(aJob), nMachines(aMachine)
 {
+#ifdef CustomMessage_2
 	std::cout << __PRETTY_FUNCTION__ << "nJobs: " << aJob << std::endl;
 	std::cout << __PRETTY_FUNCTION__ << "nMachines: " << aMachine << std::endl;
+#endif
 }
 
 
@@ -33,7 +37,11 @@ void JobShop::printJobList()
 	for(int i=0; i < JobShop::nJobs; i++)
 	{
 		jobList.push_back(i);
+
+#ifdef CustomMessage_2 //JobShop
 		std::cout << "Job ID: [" << i << "]" << " number of tasks: " << jobList[i] << std::endl;
+#endif
+
 	}
 
 //	//nTasks per Job
@@ -79,7 +87,9 @@ void JobShop::printJobList()
 
 JobShop::~JobShop()
 {
+#ifdef CustomMessage_2 //JobShop
 	std::cout << "...Destructed..." << std::endl;
+#endif
 }
 
 int JobShop::getJobs() const

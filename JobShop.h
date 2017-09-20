@@ -7,6 +7,7 @@
 
 #ifndef JOBSHOP_H_
 #define JOBSHOP_H_
+#include "config.h"
 
 #include <vector>
 
@@ -27,8 +28,7 @@ public:
 	int getMachines() const;
 	void setMachines(int machines);
 
-
-
+	void fillFirstJob(int jobID);
 	void printJobList(); //
 
 protected:

@@ -7,13 +7,14 @@
 
 #ifndef JOB_H_
 #define JOB_H_
+#include "config.h"
 
 #include <iostream>
 #include <map>
 
 #include "JobShop.h"
 
-class Job : public JobShop
+class Job: public JobShop
 {
 public:
 	Job();
@@ -24,17 +25,10 @@ public:
 
 	void fillJob(int m, int t);
 
-private:
+protected:
 	int machine;
 	int time;
-	std::multimap<int,int> job;
-
-//	for(auto i : JobShop::nJobs())
-//	{
-//
-//	}
-	//for (auto it = job_1.begin(); it != job_1.end(); ++it);
-	     // cout << it->first << " = " << it->second << endl;
+	std::multimap<int, int> job;
 
 protected:
 	int jobID;

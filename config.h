@@ -10,5 +10,7 @@
 
 #define CustomMessage_1 // Main
 #define CustomMessage_2 //JobShop
+#define CustomMessage_3 //Job
+
 
 #endif /* CONFIG_H_ */
