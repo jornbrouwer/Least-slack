@@ -9,14 +9,29 @@
 
 Job::Job()
 {
-	// TODO Auto-generated constructor stub
+	std::cout << "Job generated" << std::endl;
 
 }
 
+Job::Job(int m, int t) : machine(m), time(t)
+{
+	std::cout << "Job generated with overloaded constructor" << std::endl;
+}
+
+
 Job::~Job()
 {
-	// TODO Auto-generated destructor stub
+	std::cout <<" job destructed" << std::endl;
 }
 
 std::multimap<int,int> job;
 
+void Job::fillJob(int m, int t)
+{
+	machine = m;
+	time = t;
+	jobID +=1;
+	std::cout << "Machine: " << m << std::endl;
+	std::cout << "Time: " << t << std::endl;
+	std::cout << "jobID: " << jobID << std::endl;
+}

@@ -5,10 +5,12 @@
  *      Author: jornbrouwer
  */
 #include <iostream>
-#include <vector>
 #include "config.h"
 #include "JobShop.h"
+#include "Job.h"
 
+int nJobs;
+int nMachines;
 
 int main(int argc, char **argv)
 {
@@ -16,33 +18,14 @@ int main(int argc, char **argv)
 		std::cout << "...started..." << std::endl;
 	#endif
 
-	/*
-	 *
-	 */
-	std::vector<int> jobList;
-	for(int i = 10; i < 16; i++)
-	{
-		jobList.push_back(i);
-	}
-
-	for(int i = 0; i < 5; i++)
-	{
-		std::cout << "Job ID: [" << i << "]" << " value: " << jobList[i] << std::endl;
-	}
-
-	/*
-	 *
-	 */
-	std::vector<int>::iterator v = jobList.begin();
-	while(v != jobList.end())
-	{
-		std::cout << "jobID: " << *v << std::endl;
-		v++;
-	}
-
-
-	JobShop js2;
+	//JobShop js2;
 	JobShop j(10,10);
+	JobShop j2(20,10);
+
+	j2.printJobList();
+
+	Job job1;
+	job1.fillJob(1,30);
 
 	return 0;
 }
