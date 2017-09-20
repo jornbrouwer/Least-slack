@@ -18,3 +18,5 @@ Job::~Job()
 	// TODO Auto-generated destructor stub
 }
 
+std::multimap<int,int> job;
+

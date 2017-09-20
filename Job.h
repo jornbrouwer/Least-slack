@@ -19,7 +19,7 @@ public:
 
 	void getJobInfo(int j); //Prints specific stats of a job to the console
 
-	std::multimap<int,int> job_1;
+	std::multimap<int,int> job;
 
 //	for(auto i : JobShop::nJobs())
 //	{
