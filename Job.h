@@ -23,7 +23,7 @@ public:
 
 	void getJobInfo(int j); //Prints specific stats of a job to the console
 
-	void fillJob(int m, int t);
+	void newTask(int m, int t);
 
 protected:
 	int machine;
