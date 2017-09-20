@@ -31,7 +31,7 @@ Job::~Job()
 
 std::multimap<int,int> job;
 
-void Job::fillJob(int m, int t)
+void Job::newTask(int m, int t)
 {
 	machine = m;
 	time = t;

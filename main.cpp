@@ -54,7 +54,7 @@ int main(int argc, char **argv)
 	//j2.printJobList();
 
 	Job job1;
-	job1.fillJob(1, 30);
+	job1.newTask(1, 30);
 
 	return 0;
 }
