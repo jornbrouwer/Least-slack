@@ -18,20 +18,20 @@ class Job
 {
 public:
 	Job();
-	Job(int m, int t);
+	Job(short int anID, int aTotalTime);
 	virtual ~Job();
 
 	void getJobInfo(int j); //Prints specific stats of a job to the console
-
 	void newTask(int m, int t);
+	int getTotalJobTime();
+
+	Job operator+(Job &j);
 
 protected:
-	int machine;
-	int time;
-	std::multimap<int, int> job;
+	short int jobID;
+	int totalJobTime;
 
-protected:
-	int jobID;
+	//std::multimap<int, int> job;
 };
 
 #endif /* JOB_H_ */

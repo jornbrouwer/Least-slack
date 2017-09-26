@@ -12,7 +12,17 @@ class Task
 {
 public:
 	Task();
+	Task (short aMachineID, short aDuration); // overloaded constructor
 	virtual ~Task();
+
+	void setTaskID(short anID);
+
+protected:
+	short machineID;
+	short duration;
+
+private:
+	short taskID =0;
 };
 
 #endif /* TASK_H_ */

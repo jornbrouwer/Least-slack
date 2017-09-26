@@ -18,7 +18,6 @@ public:
 	JobShop();			//Constructor
 	JobShop(const int& nJobs, const int& nMachines); //Overloaded constructor
 	//JobShop(int j, int m);
-
 	virtual ~JobShop();		//Destructor
 
 	/*

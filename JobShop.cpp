@@ -21,6 +21,7 @@ JobShop::JobShop(const int& aJob, const int& aMachine) :
 		nJobs(aJob), nMachines(aMachine)
 {
 #ifdef CustomMessage_2
+	std::cout << "...Constructed:..." << "overloaded JobShop" << std::endl;
 	std::cout << __PRETTY_FUNCTION__ << "nJobs: " << aJob << std::endl;
 	std::cout << __PRETTY_FUNCTION__ << "nMachines: " << aMachine << std::endl;
 #endif
